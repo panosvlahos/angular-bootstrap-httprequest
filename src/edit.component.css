@@ -1,0 +1,55 @@
+
+/* .modal.show{
+    display: block;
+} */
+
+.active{
+    display: none !important;
+}
+
+.col-sm {
+    width: 30% !important;
+    max-width: 30%;
+}
+
+.col-sm.grid {
+    max-width: 40%;
+}
+h2.name {
+    color: #080080;
+}
+.col-sm.grid.box {
+    max-width: 70% !important;
+}
+.col-sm.formgroup {
+    padding-top: 30px;
+}
+
+.col-sm.formgroup .form-group {
+    padding-top: 10px;
+}
+
+button#back {
+    background-color: whitesmoke;
+}
+button#back {
+    height: 39px !important;
+    border: 0px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #080080;
+    text-transform: uppercase;
+}
+.grid .table-wrapper {
+    min-width: 0% !important;
+    background: #fff;
+    padding: 0px !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+img {
+    height: 21px;
+}
+button.edit {
+    width: 40%;
+    border: 1px;
+}
