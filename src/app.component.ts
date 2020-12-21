@@ -38,7 +38,7 @@ showModal=false;
   const requestOptions = {                                                                                                                                                                                 
     headers: new HttpHeaders(headerDict), 
   };
-  this.http.get<any>('http://lab.wappier.com/user/',  requestOptions ).toPromise().then(data => {
+  this.http.get<any>('http://lab.localhost.com/user/',  requestOptions ).toPromise().then(data => {
     this.items=data.data;
   });
   

@@ -190,7 +190,7 @@ $(document).ready(function(){
                   <tr *ngFor="let app of items.apps; let i = index">
                     <td>{{i+1}}</td>
                     <td><input type="email" class="form-control"   name="name{{i}}" [(ngModel)]="app.name"  value="{{app.name}}"></td>
-                    <td><img src="http://lab.wappier.com/{{app.avatar}}"></td>
+                    <td><img src="http://lab.localhost.com/{{app.avatar}}"></td>
                     
                     
                         <button type="button" class="edit" title="Edit" data-toggle="tooltip" (click)="onEditApp(items,i)"><i class="material-icons">&#xE254;</i></button>

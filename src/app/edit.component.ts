@@ -59,7 +59,7 @@ ngOnInit()
   const requestOptions = {                                                                                                                                                                                 
     headers: new HttpHeaders(headerDict), 
   };
-  this.http.get<any>('http://lab.wappier.com/user/'+this.id._id,  requestOptions ).toPromise().then(data => {
+  this.http.get<any>('http://lab.localhost.com/user/'+this.id._id,  requestOptions ).toPromise().then(data => {
     
     this.items=data.data;
     console.log(this.items.apps);
@@ -88,7 +88,7 @@ onEdit(items)
 let headers = new HttpHeaders();
 headers = headers.set('api-token', '3115bb90-923d-4242-a8c3-23b3a3a15205');
  
-  this.http.put<any>('http://lab.wappier.com/user/'+this.id._id, body, {
+  this.http.put<any>('http://lab.localhost.com/user/'+this.id._id, body, {
     headers: headers
     }).subscribe(data => {
       console.log(data.data);
@@ -115,7 +115,7 @@ onEditApp(items,i)
   console.log(items.apps[i].name);
 let headers = new HttpHeaders();
 headers = headers.set('api-token', '3115bb90-923d-4242-a8c3-23b3a3a15205');
-  this.http.put<any>('http://lab.wappier.com/user/'+this.id._id+'/app/'+items.apps[i]._id, bodyapp, {
+  this.http.put<any>('http://lab.localhost.com/user/'+this.id._id+'/app/'+items.apps[i]._id, bodyapp, {
     headers: headers
     }).subscribe(data => {
       console.log(data);
