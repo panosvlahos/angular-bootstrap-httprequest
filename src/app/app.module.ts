@@ -9,6 +9,12 @@ import { EditComponent } from './edit.component';
 import { EditService } from './edit.service';
 import { CommonModule } from '@angular/common';
 import {  FormsModule} from '@angular/forms';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { GridModule, PDFModule, ExcelModule } from '@progress/kendo-angular-grid';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { RatingComponent } from './rating.component';
+import 'hammerjs';
 
  const routes:Routes=[
   { path: 'first-component', component: AppComponent },
@@ -21,8 +27,9 @@ import {  FormsModule} from '@angular/forms';
 // ]
 @NgModule({
   declarations: [
-    AppComponent
-    ,routingComponents
+    AppComponent,
+    routingComponents,
+    RatingComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -31,7 +38,13 @@ import {  FormsModule} from '@angular/forms';
     HttpClientModule,
     BrowserAnimationsModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    ButtonsModule,
+    GridModule,
+    ChartsModule,
+    InputsModule,
+    PDFModule,
+    ExcelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ import { EditService } from './edit.service';
 import { CommonModule } from '@angular/common';
 import {  FormsModule} from '@angular/forms';
 
+
+
  const routes:Routes=[
   { path: 'first-component', component: AppComponent },
   { path: 'second-component/root', component: EditComponent }
